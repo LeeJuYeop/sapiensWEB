@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>대신건강지킴이</title>
+    <meta charset="utf-8">
+    <script>
+    </script>
+    <style>
+    body {
+      height: 100vh;
+  margin: 0;
+  background: #2C2F33;
+    }
+    #front-0 {
+      color: #FFFFFF;
+      background-color: #2C2F33;
+    }
+    #front-1{
+      color: #FFFFFF;
+      background-color: #7289DA;
+      position: relative;
+    }
+    #front-2 {
+      position: relative;
+      padding-bottom: 30px;
+      padding-top: 0px;
+    }
+      #front-3 {
+        position: static;
+        color: #FFFFFF;
+        margin-top: 90px;
+    }
+    .box {
+      display: inline-block;
+      width: 500px;
+      height: 50px;
+      background:  #2C2F33;
+      border: 3px solid #FFFFFF;
+      border-radius: 5px;
+      color: white;
+      margin-top: 20px;
+      overflow-y: hidden;
+    }
+    .box:hover{border-color:#2f479c;}
+    </style>
+
+  </head>
+  <body>
+    <div id="front-0" align="center">
+      <br> <!-- 사이트 설명 -->
+     <h1>대신건강지킴이</h1>
+     <p>대신건강지킴이는 대신고 학생들의 건강을 위해 개설된 웹페이지입니다.</p>
+     <p>증상이 나타나는 부위와 증상을 선택하세요. 의심되는 질병과 대처 방법을 추천해드리겠습니다.</p>
+    </div>
+
+    <div id="front-1" align="center"> <!-- 부위 선택 -->
+      <br><br><br>
+     <h2>어디가 불편하십니까?</h2>
+      <div id="front-2"> <!-- 부위클릭커 -->
+        <div class="box" id="one" onclick="location.href='Digestion.html';">소화/복부</a></div>
+        <br>
+        <div class="box" id="two" onclick="location.href='Respiration.html';">호흡/이비인후</a></div>
+        <br>
+        <div class="box" id="three" onclick="location.href='Head.html';">두통</a></div>
+        <br>
+        <div class="box" id="four" onclick="location.href='Skin.html';">피부</a></div>
+        <br>
+        <div class="box" id="five" onclick="location.href='Musculoskeleton.html';">근골격통</a></div>
+      </div>
+    </div>
+    <div id="front-3">
+    <p>※본 웹사이트는 대전대신고 동아리 사피엔스가 개설 및 관리중입니다.</p>
+    <p>사이트 문의
+    <br>동아리회장 : 2학년 권석순 // docsun21@naver.com
+    <br>웹제작자 : 2학년 이주엽 // wnduq330@naver.com
+    </div>
+  </body>
+</html>

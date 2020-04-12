@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+  <head>
+    <title>소화/복부</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">
+    <meta charset="utf-8">
+    <script>
+    function A1() {
+      if (document.getElementById('A1-1').checked) {
+        document.getElementById('Q2').style.display = 'block';
+        document.getElementById('Q3').style.display = 'none';
+        document.getElementById('Q4').style.display = 'none';
+        document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-2').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'block';
+          document.getElementById('Q4').style.display = 'none';
+          document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-3').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'none';
+          document.getElementById('Q4').style.display = 'block';
+          document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-4').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'none';
+          document.getElementById('Q4').style.display = 'none';
+          document.getElementById('Q5').style.display = 'block';
+        }
+        }
+    function A2() {
+      if (document.getElementById('A2-Y').checked) {
+            document.getElementById('T1').style.display = 'block';
+            document.getElementById('T2').style.display = 'none';
+            document.getElementById('Q2').style.borderColor = '#7289DA';
+        }
+        else if (document.getElementById('A2-N').checked){
+          document.getElementById('T1').style.display = 'none';
+          document.getElementById('T2').style.display = 'block';
+          document.getElementById('Q2').style.borderColor = '#7289DA';
+     }
+     }
+     function A3() {
+       if (document.getElementById('A3-Y').checked) {
+             document.getElementById('T3').style.display = 'block';
+             document.getElementById('T4').style.display = 'none';
+             document.getElementById('Q3').style.borderColor = '#7289DA';
+         }
+         else if (document.getElementById('A3-N').checked){
+           document.getElementById('T3').style.display = 'none';
+           document.getElementById('T4').style.display = 'block';
+           document.getElementById('Q3').style.borderColor = '#7289DA';
+      }
+      }
+      function A4() {
+        if (document.getElementById('A4-Y').checked) {
+              document.getElementById('T5').style.display = 'block';
+              document.getElementById('Q6').style.display = 'none';
+              document.getElementById('Q4').style.borderColor = '#7289DA';
+              document.getElementById('Q6+').style.display = 'none';
+              document.getElementById('T6').style.display = 'none';
+              document.getElementById('T9').style.display = 'none';
+          }
+          else if (document.getElementById('A4-N').checked){
+            document.getElementById('T5').style.display = 'none';
+            document.getElementById('Q6').style.display = 'block';
+            document.getElementById('Q6+').style.display = 'block';
+            document.getElementById('Q4').style.borderColor = '#99AAB5';
+       }
+       }
+       function A5() {
+         if (document.getElementById('A5-Y').checked) {
+               document.getElementById('T7').style.display = 'block';
+               document.getElementById('T8').style.display = 'none';
+               document.getElementById('Q5').style.borderColor = '#7289DA';
+           }
+           else if (document.getElementById('A5-N').checked){
+             document.getElementById('T7').style.display = 'none';
+             document.getElementById('T8').style.display = 'block';
+             document.getElementById('Q5').style.borderColor = '#7289DA';
+        }
+        }
+        function A6() {
+          if (document.getElementById('A6-Y').checked) {
+                document.getElementById('T6').style.display = 'block';
+                document.getElementById('T9').style.display = 'none';
+                document.getElementById('Q4').style.borderColor = '#7289DA';
+            }
+            else if (document.getElementById('A6-N').checked){
+              document.getElementById('T6').style.display = 'none';
+              document.getElementById('T9').style.display = 'block';
+              document.getElementById('Q4').style.borderColor = '#7289DA';
+         }
+         }
+    </script>
+    <style>
+    body {
+      background-color: #2C2F33;
+    }
+    #Q1{
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+
+    }
+
+    #Q2 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding:15px;
+      margin-top: 50px;
+    }
+    #Q3 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    #Q4 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    #Q5 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 align="center"><font color="white">소화 혹은 복부에 문제가 있으신가요?</font></h1>
+    <div id="Q1">
+     <h2>증상을 골라주세요</h2>
+      <input type="radio" name="A1" id="A1-1" onclick="javascript:A1()">1. 구토
+      <br><br>
+      <input type="radio" name="A1" id="A1-2" onclick="javascript:A1()">2. 설사
+      <br><br>
+      <input type="radio" name="A1" id="A1-3" onclick="javascript:A1()">3. 복부 불쾌감 (가스 찬 느낌)
+      <br><br>
+      <input type="radio" name="A1" id="A1-4" onclick="javascript:A1()">4. 명치 부위의 찌르는 듯한 통증/ 답답함
+    </div>
+
+
+    <div id="Q2" style="display:none">
+     <h2>명치 부근의 답답함/ 식은땀 / 더부룩함 등의 증상을 동반합니까?</h2>
+      <input type="radio" name="A2" id="A2-Y" onclick="javascript:A2()">예
+      <br>
+      <input type="radio" name="A2" id="A2-N" onclick="javascript:A2()">아니오
+      <p id="T2" style="display:none">멀미/ 정신적 충격/ 외부 자극 등 소화계의 문제가 아닌 구토일 수 있습니다. 물을 마시며 호흡을 고르며 쉬어보세요. 그러나 증상이 지속되고 구토 외의 이상 증세가 나타난다면 즉시 병원을 찾으세요.</p>
+      <p id="T1" style="display:none">급성 체증이 원인인 구토 증상일 수 있습니다. 식사를 유동식(죽 등)으로 대체하고 한나절 쉬면 괜찮아지는 경우가 대다수입니다. 그러나 구토까지 발생한다는 것은 꽤나 강한 체증이므로 단식하며 쉬기보다는 가까운 내과를 한번 방문하는 것을 권장합니다. (증상이 지속될 때도 내과 방문을 추천합니다)</p>
+    </div>
+
+    <div id="Q3" style="display:none">
+     <h2>음식 섭취 후 짧은 시간 내 설사가 연속적으로 발생합니까?</h2>
+      <input type="radio" name="A3" id="A3-Y" onclick="javascript:A3()">예
+      <br>
+      <input type="radio" name="A3" id="A3-N" onclick="javascript:A3()">아니오
+      <p id="T3" style="display:none">장염일 가능성이 있습니다. 음식물 섭취를 멈추시고 의사에게 자세한 진단을 받으세요.
+      <br><br>
+      *장염이 맞다면 음식물 섭취가 굉장한 고통을 유발할 수 있습니다. 정확한 진단 전까진 음식물 섭취를 자제하세요. (수분 보충을 위해 따뜻한 물을 마셔주는 건 좋습니다)*”
+      </p>
+      <p id="T4" style="display:none">상한 음식을 먹었다면 증상 잠복기가 있는 ‘설사형 식중독’일 가능성이 있습니다. 따뜻한 물을 자주 마시는 것이 도움이 되며, 약을 임의로 먹지 말고 즉시 의사를 찾아가 진단을 받아보세요</p>
+    </div>
+
+
+    <div id="Q4" style="display:none">
+     <h2>뱃속이 꾸륵거리고, 팽팽해지는 느낌이 드나요?</h2>
+      <input type="radio" name="A4" id="A4-Y" onclick="javascript:A4()">예
+      <br>
+      <input type="radio" name="A4" id="A4-N" onclick="javascript:A4()">아니오
+      <p id="T5" style="display:none">음식의 급한 섭취나 소화불량 등의 원인으로 장내 가스가 많이 생긴 것일 수 있습니다. 고기류, 유제품류, 기름진 음식, 인스턴트 음식은 피하시고, 배를 마사지하거나 산책 등을 통해 몸을 움직여 장을 자극해 보세요. 학생이라면 가스 차는 것이 일시적인 현상으로, 큰 문제가 될 가능성은 적지만, 이러한 증상이 짧은 기간에도 자주 발생한다면 내과를 방문해보세요</p>
+      <h2 id="Q6" style="display:none">속이 울렁거리는 듯한 증상이 있나요?</h2>
+      <div id="Q6+" style="display:none">
+      <input type="radio" name="A6" id="A6-Y" onclick="javascript:A6()">예
+      <br>
+      <input type="radio" name="A6" id="A6-N" onclick="javascript:A6()">아니오
+      </div>
+      <p id="T6" style="display:none">식중독, 혹은 극심한 스트레스 속에서의 식사로 인한 체증 현상의 하나일 수 있습니다. 식사를 유동식으로 대체하시고 푹 쉬면 나아지는 경우가 많습니다. 그러나 증상이 지속될 경우 내과를 방문해 보세요
+      <br><br>
+      + 스트레스는 소화 작용에 악영향을 미칩니다. 편안한 마음을 가지도록 마인드 컨트롤 해보세요
+      <p>
+      <p id="T9" style="display:none">첫번째 질문으로 돌아가세요
+      <p>
+    </div>
+
+
+    <div id="Q5" style="display:none">
+     <h2>앞의 1, 2, 3 의 증상 중 하나가 추가적으로 있습니까?</h2>
+      <input type="radio" name="A5" id="A5-Y" onclick="javascript:A5()">예
+      <br>
+      <input type="radio" name="A5" id="A5-N" onclick="javascript:A5()">아니오
+      <p id="T7" style="display:none">
+        급성 체증일 가능성이 높습니다. 식사를 유동식 (죽 등)으로 바꾸고 쉬면 괜찮아지는 경우가 대다수입니다. 그러나 추가적인 증상 (구토, 설사)가 지속되고, 불쾌감이 참기 힘들다면 가까운 내과를 방문하여 진단과 처방을 받아보세요.
+      <br><br>+ 스스로의 판단에 따른 임의적인 약 복용은 피하시길 바랍니다
+      </p>
+      <p id="T8" style="display:none">가벼운 급성 체증일 수 있습니다. 다른 특이적 이상이 없다면, 자극적 음식을 피하고, 휴식을 취해 보세요. 그러나 다른 증상이 동반되고 불쾌감이 지속된다면 내과 방문을 추천합니다</p>
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>근/골격통</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">
+    <meta charset="utf-8">
+    <script>
+    function A1() {
+      if (document.getElementById('A1-1').checked) {
+        document.getElementById('T1').style.display = 'block';
+        document.getElementById('T2').style.display = 'none';
+        document.getElementById('T3').style.display = 'none';
+        document.getElementById('Q1').style.borderColor = '#7289DA';
+        }
+        else if (document.getElementById('A1-2').checked){
+          document.getElementById('T1').style.display = 'none';
+          document.getElementById('T2').style.display = 'block';
+          document.getElementById('T3').style.display = 'none';
+          document.getElementById('Q1').style.borderColor = '#7289DA';
+        }
+        else if (document.getElementById('A1-3').checked){
+          document.getElementById('T1').style.display = 'none';
+          document.getElementById('T2').style.display = 'none';
+          document.getElementById('T3').style.display = 'block';
+          document.getElementById('Q1').style.borderColor = '#7289DA';
+        }
+        }
+    </script>
+    <style>
+    body {
+      background-color: #2C2F33;
+    }
+    #Q1{
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+
+    }
+    </style>
+  </head>
+  <body>
+    <h1 align="center"><font color="white">근/골격통이 있으신가요?</font></h1>
+    <div id="Q1">
+     <h2>다음 중 해당하는 바를 선택해주세요.</h2>
+      <input type="radio" name="A1" id="A1-1" onclick="javascript:A1()">1. 최근에 과격한 운동을 한 적이 있다.
+      <br><br>
+      <input type="radio" name="A1" id="A1-2" onclick="javascript:A1()">2. 통증 부위의 관절을 구부렸을 때, 통증이 있다.
+      <br><br>
+      <input type="radio" name="A1" id="A1-3" onclick="javascript:A1()">3. 허리통증을 중심으로 다리가 저리거나 몸이 쑤신다.
+      <span id="T1" style="display:none">
+      <p>평소의 운동량을 초과하여 과도한 운동을 했다면, 근육에 무리가 생겨 근육통을 유발할 수 있습니다. 운동을 잠시 쉬고 통증 부위에 온찜질을 한다면 혈관을 확장하여 근육의 피로도를 줄일 수 있고, 원활한 혈액순환을 도와 통증을 완화할 수 있습니다. 통증이 지속된다면 의사의 처방을 통한 근육이완제와 진통제 복용을 추천합니다.</p>
+      </span>
+      <span id="T2" style="display:none">
+      <p>인대나 힘줄 또는 관절의 염증 증상입니다. 냉찜질을 통해 염증을 완화할 수 있습니다. 관절 운동을 자제하고 휴식을 취한다면 통증이 빠르게 없어질 것입니다. 통증이 줄지 않고 관절의 뻣뻣함이 계속 느껴진다면 정형외과 또는 한의원의 진료를 추천합니다,</p>
+      </span>
+      <span id="T3" style="display:none">
+      <p>올바르지 않은 자세로 앉거나 서 있을 경우, 무게 중심점이 한쪽에만 있게 되어 허리 근육 수축 현상이 일어나 요통을 발생시키게 됩니다. 요통은 신경계 통증까지 이어질 수 있으므로 빠른 자세 교정이 필요합니다. 정형외과의 도수치료나 한의원의 추나요법 등을 통해 골격의 위치를 맞추고 자세를 교정하는 것을 추천합니다.</p>
+      </span>
+
+    </div>
+  </body>
+</html>

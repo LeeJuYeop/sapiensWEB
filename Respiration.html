@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <title>호흡/이비인후</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">
+    <meta charset="utf-8">
+    <script>
+      function A1() {
+        if (document.getElementById('A1-1').checked) {
+          document.getElementById('Q1').style.borderColor = '#99AAB5';
+          document.getElementById('T7').style.display = 'none';
+          document.getElementById('Q2').style.display = 'block';
+          document.getElementById('Q3').style.display = 'none';
+          document.getElementById('Q4').style.display = 'none';
+          document.getElementById('Q5').style.display = 'none';
+          }
+          else if (document.getElementById('A1-2').checked){
+            document.getElementById('Q1').style.borderColor = '#99AAB5';
+            document.getElementById('T7').style.display = 'none';
+            document.getElementById('Q2').style.display = 'none';
+            document.getElementById('Q3').style.display = 'block';
+            document.getElementById('Q4').style.display = 'none';
+            document.getElementById('Q5').style.display = 'none';
+          }
+          else if (document.getElementById('A1-3').checked){
+            document.getElementById('Q1').style.borderColor = '#99AAB5';
+            document.getElementById('T7').style.display = 'none';
+            document.getElementById('Q2').style.display = 'none';
+            document.getElementById('Q3').style.display = 'none';
+            document.getElementById('Q4').style.display = 'block';
+            document.getElementById('Q5').style.display = 'none';
+          }
+          else if (document.getElementById('A1-4').checked){
+            document.getElementById('Q2').style.display = 'none';
+            document.getElementById('Q3').style.display = 'none';
+            document.getElementById('Q4').style.display = 'none';
+            document.getElementById('T7').style.display = 'block';
+            document.getElementById('Q1').style.borderColor = '#7289DA';
+          }
+          }
+      function A2() {
+        if (document.getElementById('A2-Y').checked) {
+              document.getElementById('T1').style.display = 'block';
+              document.getElementById('T2').style.display = 'none';
+              document.getElementById('Q2').style.borderColor = '#7289DA';
+          }
+          else if (document.getElementById('A2-N').checked){
+            document.getElementById('T1').style.display = 'none';
+            document.getElementById('T2').style.display = 'block';
+            document.getElementById('Q2').style.borderColor = '#7289DA';
+       }
+       }
+       function A3() {
+         if (document.getElementById('A3-Y').checked) {
+               document.getElementById('T3').style.display = 'block';
+               document.getElementById('T4').style.display = 'none';
+               document.getElementById('Q3').style.borderColor = '#7289DA';
+           }
+           else if (document.getElementById('A3-N').checked){
+             document.getElementById('T3').style.display = 'none';
+             document.getElementById('T4').style.display = 'block';
+             document.getElementById('Q3').style.borderColor = '#7289DA';
+        }
+        }
+        function A4() {
+          if (document.getElementById('A4-Y').checked) {
+                document.getElementById('T5').style.display = 'block';
+                document.getElementById('T6').style.display = 'none';
+                document.getElementById('Q4').style.borderColor = '#7289DA';
+            }
+            else if (document.getElementById('A4-N').checked){
+              document.getElementById('T5').style.display = 'none';
+              document.getElementById('T6').style.display = 'block';
+              document.getElementById('Q4').style.borderColor = '#7289DA';
+        }
+        }
+      </script>
+      <style>
+      body {
+        background-color: #2C2F33;
+      }
+      #Q1{
+        background-color: #2C2F33;
+        color: #FFFFFF;
+        border: 3px solid #99AAB5;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 15px;
+        margin-top: 50px;
+
+      }
+
+      #Q2 {
+        background-color: #2C2F33;
+        color: #FFFFFF;
+        border: 3px solid #99AAB5;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding:15px;
+        margin-top: 50px;
+      }
+      #Q3 {
+        background-color: #2C2F33;
+        color: #FFFFFF;
+        border: 3px solid #99AAB5;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 15px;
+        margin-top: 50px;
+      }
+      #Q4 {
+        background-color: #2C2F33;
+        color: #FFFFFF;
+        border: 3px solid #99AAB5;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 15px;
+        margin-top: 50px;
+      }
+      </style>
+    </head>
+    <body>
+      <h1 align="center"><font color="white">목과 코, 호흡에 장애가 있으신가요?</font></h1>
+      <div id="Q1">
+       <h2>증상을 골라주세요</h2>
+        <input type="radio" name="A1" id="A1-1" onclick="javascript:A1()">1. 인후통
+        <br><br>
+        <input type="radio" name="A1" id="A1-2" onclick="javascript:A1()">2. 기침
+        <br><br>
+        <input type="radio" name="A1" id="A1-3" onclick="javascript:A1()">3. 콧물 과다
+        <br><br>
+        <input type="radio" name="A1" id="A1-4" onclick="javascript:A1()">4. 쉰 목
+        <span id="T7", style="display:none">
+        <p>상기도가 감염되면 후두나 성대에 영향을 미치기 때문에 갑자기 목이 쉬거나 목소리가 갈라져 나옵니다. 이때는 목이 건조하지 않도록, 따뜻한 물을 자주 마셔주시고, 흡연, 호통을 자제하는 것이 좋습니다. 그러나, 목소리가 아예 안 나온다거나 회복이 지나치게 느린 경우 이비인후과에 방문하는 것을 권장합니다.</p>
+        </span>
+      </div>
+
+
+      <div id="Q2" style="display:none">
+       <h2>체온이 정상보다 높습니까?</h2>
+        <input type="radio" name="A2" id="A2-Y" onclick="javascript:A2()">예
+        <br>
+        <input type="radio" name="A2" id="A2-N" onclick="javascript:A2()">아니오
+        <p id="T1" style="display:none">급성 인후염, 즉 흔히 말하는 목감기일 가능성이 있습니다. 목감기가 맞으면, 두통, 피로 등 몸에 다른 이상도 나타났을 것입니다. 이때는, 따뜻한 물을 자주 마셔 목을 편하게 해 주기를 권장하며, 공부를 잠시 멈추고 몸을 쉬는 것이 도움이 됩니다. 이러한 조치를 취한 후 시간이 될 때 가까운 이비인후과/내과/가정의학과를 방문해보기를 권장합니다.</p>
+        <p id="T2" style="display:none">노래를 불렀거나, 큰 소리를 많이 냈거나, 흡연을 많이 하면 목에 염증이 생겨 통증을 유발하기 쉽습니다. 따뜻한 물로 목을 풀고, 과도한 목의 사용을 자제하며, 증상이 심하다면 이비인후과/가정의학과를 방문하기를 권장합니다.</p>
+      </div>
+
+      <div id="Q3" style="display:none">
+       <h2>열, 두통, 피로 등의 증상을 동반합니까?</h2>
+        <input type="radio" name="A3" id="A3-Y" onclick="javascript:A3()">예
+        <br>
+        <input type="radio" name="A3" id="A3-N" onclick="javascript:A3()">아니오
+        <p id="T3" style="display:none">감기일 가능성이 있습니다. 대다수가 잘 알다시피 몸을 따뜻하게 유지하고, 따뜻한 물을 자주 마셔주세요. 감기가 맞으면 약 7~10일이 지나면 낫는 경우가 대부분이나 증상이 심하면 내과/가정의학과를 즉시 방문하세요.</p>
+        <p id="T4" style="display:none">연기, 먼지 등에 의한 이물질 배출 현상일 수 있습니다. 호흡을 가다듬어보세요. 물을 마시는 것도 도움이 됩니다. 그러나, 기침이 계속될 경우 다른 질병의 가능성이 존재합니다. 호흡기는 민감한 부분이므로 기침이 계속된다면 이비인후과를 방문해보세요.</p>
+      </div>
+
+
+      <div id="Q4" style="display:none">
+       <h2>열, 기침, 피로감 등의 증상을 동반합니까?</h2>
+        <input type="radio" name="A4" id="A4-Y" onclick="javascript:A4()">예
+        <br>
+        <input type="radio" name="A4" id="A4-N" onclick="javascript:A4()">아니오
+        <p id="T5" style="display:none">감기일 가능성이 있습니다. 대다수가 잘 알다시피 몸을 따뜻하게 유지하고, 따뜻한 물을 자주 마셔주세요. 감기가 맞으면 약 7~10일이 지나면 낫는 경우가 대부분이나 증상이 심하면 내과/가정의학과를 즉시 방문하세요.</p>
+        <p id="T6" style="display:none">환절기에 나타나기 쉬운 알레르기성 비염 증상일 수 있습니다. 적정 온도와 습도를 유지하시고 코 세척과 코 마사지가 도움이 될 수 있습니다. 몸을 따뜻하게 유지하는 것도 증상을 완화하는 방법입니다. 증상이 과도하게 심하거나 견디기 힘들 정도라면 이비인후과를 방문해보세요.</p>
+      </div>
+
+
+
+
+    </body>
+  </html>

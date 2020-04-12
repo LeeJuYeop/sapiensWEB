@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <title>피부</title>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">
+    <meta charset="utf-8">
+    <script>
+    function A1() {
+      if (document.getElementById('A1-1').checked) {
+        document.getElementById('Q2').style.display = 'block';
+        document.getElementById('Q3').style.display = 'none';
+        document.getElementById('Q4').style.display = 'none';
+        document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-2').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'block';
+          document.getElementById('Q4').style.display = 'none';
+          document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-3').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'none';
+          document.getElementById('Q4').style.display = 'block';
+          document.getElementById('Q5').style.display = 'none';
+        }
+        else if (document.getElementById('A1-4').checked){
+          document.getElementById('Q2').style.display = 'none';
+          document.getElementById('Q3').style.display = 'none';
+          document.getElementById('Q4').style.display = 'none';
+          document.getElementById('Q5').style.display = 'block';
+        }
+        }
+    function A2() {
+      if (document.getElementById('A2-Y').checked) {
+            document.getElementById('T1').style.display = 'block';
+            document.getElementById('T2').style.display = 'none';
+            document.getElementById('Q2').style.borderColor = '#7289DA';
+        }
+        else if (document.getElementById('A2-N').checked){
+          document.getElementById('T1').style.display = 'none';
+          document.getElementById('T2').style.display = 'block';
+          document.getElementById('Q2').style.borderColor = '#7289DA';
+     }
+     }
+     function A3() {
+       if (document.getElementById('A3-Y').checked) {
+             document.getElementById('T3').style.display = 'block';
+             document.getElementById('T4').style.display = 'none';
+             document.getElementById('Q3').style.borderColor = '#7289DA';
+         }
+         else if (document.getElementById('A3-N').checked){
+           document.getElementById('T3').style.display = 'none';
+           document.getElementById('T4').style.display = 'block';
+           document.getElementById('Q3').style.borderColor = '#7289DA';
+      }
+      }
+      function A4() {
+        if (document.getElementById('A4-Y').checked) {
+              document.getElementById('T5').style.display = 'block';
+              document.getElementById('T6').style.display = 'none';
+              document.getElementById('Q4').style.borderColor = '#7289DA';
+          }
+          else if (document.getElementById('A4-N').checked){
+            document.getElementById('T5').style.display = 'none';
+            document.getElementById('T6').style.display = 'block';
+            document.getElementById('Q4').style.borderColor = '#7289DA';
+       }
+       }
+       function A5() {
+         if (document.getElementById('A5-Y').checked) {
+               document.getElementById('T7').style.display = 'block';
+               document.getElementById('T8').style.display = 'none';
+               document.getElementById('Q5').style.borderColor = '#7289DA';
+           }
+           else if (document.getElementById('A5-N').checked){
+             document.getElementById('T7').style.display = 'none';
+             document.getElementById('T8').style.display = 'block';
+             document.getElementById('Q5').style.borderColor = '#7289DA';
+        }
+        }
+    </script>
+    <style>
+    body {
+      background-color: #2C2F33;
+    }
+    #Q1{
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+
+    }
+
+    #Q2 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding:15px;
+      margin-top: 50px;
+    }
+    #Q3 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    #Q4 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    #Q5 {
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      border: 3px solid #99AAB5;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 15px;
+      margin-top: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 align="center"><font color="white">피부에 이상증세가 있으신가요?</font></h1>
+    <div id="Q1">
+     <h2>증상을 골라주세요</h2>
+      <input type="radio" name="A1" id="A1-1" onclick="javascript:A1()">1. 수포가 올라옴
+      <br><br>
+      <input type="radio" name="A1" id="A1-2" onclick="javascript:A1()">2. 빨개지는 피부
+      <br><br>
+      <input type="radio" name="A1" id="A1-3" onclick="javascript:A1()">3. 건조해진 피부
+      <br><br>
+      <input type="radio" name="A1" id="A1-4" onclick="javascript:A1()">4. 물집
+    </div>
+
+
+    <div id="Q2" style="display:none">
+     <h2>심한 가려움을 동반합니까?</h2>
+      <input type="radio" name="A2" id="A2-Y" onclick="javascript:A2()">예
+      <br>
+      <input type="radio" name="A2" id="A2-N" onclick="javascript:A2()">아니오
+      <p id="T1" style="display:none">급작스럽게 나타나고 사라지는 단순한 알레르기가 아니라 심각한 만성질환일 가능성이 높습니다. 평소 장이 좋지 않다면 포진성 피부염일 가능성이 높으며 이는 또다른 심각한 합병증을 유발할 수 있습니다. 발에서부터 포진이 손까지 올라오면 한포진일 가능성도 있습니다. 당장 병원을 찾아가세요.</p>
+      <p id="T2" style="display:none">조금 경과를 지켜 봐야 알겠습니다. 심한 알레르기성 반응일 수 있으며 절대 수포를 터트리지 않는 것이 중요합니다. 2차 감염의 우려가 있으므로 특별한 조치는 취하지 말고 알러지 약을 복용하십시오. 금방 사라지지 않거나 지속적인 수포를 유지할 경우 병원을 찾으십시오.</p>
+    </div>
+
+    <div id="Q3" style="display:none">
+     <h2>심한 가려움을 동반합니까?</h2>
+      <input type="radio" name="A3" id="A3-Y" onclick="javascript:A3()">예
+      <br>
+      <input type="radio" name="A3" id="A3-N" onclick="javascript:A3()">아니오
+      <p id="T3" style="display:none">특별한 음식을 섭취 시 목의 부어오름(따가움 동반), 또는 퍼지는 성질을 동반할 시 알레르기성 반응일 가능성이 있으며, 이때 빠른 조취가 필요합니다. 가능하면 속히 병원에 가야하지만, 상황이 여의치 않고 집에 알레르기 억제 약이 있다면 섭취하는 것이 좋습니다. 어떠한 경우는 병원을 찾는 것이 현명합니다.</p>
+      <p id="T4" style="display:none">태양광으로 인한 저온 화상일 가능성이 높습니다. 붉게 달아오른 부위를 차갑게 식혀 주시고 큰 자극을 가하지 마십시오. 화상이 지속되게 되면, 물집이 잡히거나 심하면 피부암까지 발전할 수 있으니 신경 써서 치료해야 할 것으로 판단됩니다. 이 외에도 별다른 징후 없이 지속된다면 속히 병원을 찾아주십시오.</p>
+    </div>
+
+    <div id="Q4" style="display:none">
+     <h2>피부가 비늘처럼 하얀 각질이 굳어져 올라옵니까?</h2>
+      <input type="radio" name="A4" id="A4-Y" onclick="javascript:A4()">예
+      <br>
+      <input type="radio" name="A4" id="A4-N" onclick="javascript:A4()">아니오
+      <p id="T5" style="display:none">피부 발진 등을 동반한다면 단순 피부질환이 아닌 건선일 가능성이 있습니다. 오랫동안 방치 시 고름이 발생하는 등의 악화로 이어질 수 있으므로 빠르게 병원을 찾아야 합니다. 만성 피부 건조증일 가능성도 있으므로 어떠한 경우든 병원에 가보는 것을 권장합니다.</p>
+      <p id="T6" style="display:none">몸을 세척하고 말린 후 나타나는 일시적인 증상일 수 있습니다. 피부 보습제 등을 통해 몸의 수분을 유지해 주는 것이 좋습니다. 이때 과도한 자극을 주게 될 경우 피부가 약화되어 있어 쉽게 상처가 날 수 있고, 2차 감염 우려와 피부건조 악화를 초래할 수 있습니다. 다만 과도한 범위에 나타나거나 오랜 기간 유지 시 병원에 가보는 것을 권장드립니다.</p>
+    </div>
+
+    <div id="Q5" style="display:none">
+     <h2>신경통이나 발진을 동반합니까?</h2>
+      <input type="radio" name="A5" id="A5-Y" onclick="javascript:A5()">예
+      <br>
+      <input type="radio" name="A5" id="A5-N" onclick="javascript:A5()">아니오
+      <p id="T7" style="display:none">대상포진일 가능성이 매우 높습니다. 급히 병원을 찾아 진단을 요구합니다. 몸 상태가 좋지 않아 피곤하거나 수면 부족인 사람에게도 일시적 면역 저하로 인해 발생할 수 있습니다.</p>
+      <p id="T8" style="display:none">과도한 마찰로 인한 자극성 물집일 가능성이 높습니다. 2차 감염 우려 때문에 물집을 가능한 터트리지 않는 것이 좋으나 너무 커지거나 쉽게 사라지지 않으면 병원을 찾아 제거해야 합니다.</p>
+    </div>
+
+
+
+  </body>
+</html>
